@@ -1,0 +1,31 @@
+
+body
+	background: gray
+	color: white
+	font-family: $base-font
+
+.container
+	max-width: 1000px
+	margin: 0 auto
+
+.nav-top
+	width: 50%
+	+media(768px)
+		width: auto
+
+	&__list
+		+no-list
+
+	&__item
+		display: inline-block
+
+		&::before
+			content: ''
+			border: 1px solid #000
+	
+	&__link
+		display: block
+		text-decoration: none
+		
+		&:hover
+			background: red

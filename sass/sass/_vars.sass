@@ -1,0 +1,22 @@
+$color: white
+$width: 1000px
+$base-font: "Roboto", sans-serif
+
+@function rem($px)
+	@return $px / 16px + 0rem
+
+=no-list
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+
+=flex-align($main, $cross)
+	display: flex
+	justify-content: $main
+	align-items: $cross
+
+
+=media($size)
+	@media screen and (min-width: $size)
+		@content
